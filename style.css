@@ -1,0 +1,37 @@
+#desktop,
+#tablet,
+#mobile {
+    display: none;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+    #desktop {
+        display: block;
+    }
+}
+
+/* tablet */
+@media (max-width:768px) {
+    #tablet {
+        display: block;
+    }
+
+    #desktop {
+        display: none;
+    }
+}
+
+/* mobile */
+@media (max-width:375px) {
+    #mobile {
+        display: block;
+    }
+
+    #tablet {
+        display: none;
+    }
+}
+
+
+
