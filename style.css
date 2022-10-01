@@ -4,32 +4,137 @@
     display: none;
 }
 
+body {
+    margin: 0;
+    display: flex;
+    float: left;
+    /* flex-wrap: wrap; */
+}
+
+article.card {
+    max-width: 320px;
+    max-height: 800px;
+    margin: 20px;
+    /* display: none; */
+}
+
+#title {
+    background-color: rgba(109, 109, 109, 0.534);
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    display: flex;
+}
+
+#title *{
+    padding-right: 10px;
+}
+
+#image {
+    width: 319.5px;
+}
+
+#card-head, #card-head3 {
+    font-size: 20px;
+}
+
+#card-head2, #card-head4 {
+    color: white;
+}
+
+#card-head5 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#card-head6 {
+    color: white;
+}
+
+#card-footer {
+    /* rgba(85, 82, 82, 0), rgba(240, 233, 233, 0.918) */
+    background-image: linear-gradient(to bottom right, #a3a3a3c7,#ffffff00);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 4px 0px 0 rgb(0 0 0 / 15%), 0 0px 15px 0 rgb(0 0 0 / 30%);
+}
+
+#lorem {
+    margin-left: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#first-word {
+    font-weight: bold;
+}
+
+.material-icons.heart {
+    padding-top: 15px;
+    text-indent: 20px;
+}
+
+.material-icons.md-62 {
+    margin-left: 5px;
+    font-size: 62px;
+}
+
+
+.material-icons.md-36 {
+    font-size: 36px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+}
+
+.material-icons.md-dark {
+    color: rgb(255, 255, 255);
+}
+
 /* desktop */
 @media (min-width: 768px) {
-    #desktop {
+    /* #desktop {
         display: block;
+    } */
+
+    body {
+        margin: 0;
+        display: flex;
+        float: left;
     }
 }
 
 /* tablet */
-@media (max-width:768px) {
-    #tablet {
+@media (min-width:375px) {
+    /* #tablet {
         display: block;
     }
 
     #desktop {
         display: none;
+    } */
+
+    body {
+        margin: 0;
+        display: flex;
+        float: left;
+        flex-wrap: wrap;
     }
 }
 
 /* mobile */
 @media (max-width:375px) {
-    #mobile {
+    /* #mobile {
         display: block;
     }
 
     #tablet {
         display: none;
+    } */
+
+    body {
+        margin: 0;
+        display: block;
     }
 }
 
